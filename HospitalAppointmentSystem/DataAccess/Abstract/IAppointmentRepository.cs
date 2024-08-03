@@ -7,7 +7,7 @@ using Entities.Concrete;
 
 namespace DataAccess.Abstract
 {
-    public interface IAppointmentRepository
+    public interface IAppointmentRepository<T> where T : class, new()
     {
         Appointment Get(int id);
         List<Appointment> GetAll();
