@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\HospitalAppointmentSystem\\HospitalAppointmentSystem\\HospitalAppointmentSystem.csproj": {}
+    "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\hospital-appointment-system\\HospitalAppointmentSystem\\HospitalAppointmentSystem\\HospitalAppointmentSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\HospitalAppointmentSystem\\HospitalAppointmentSystem\\HospitalAppointmentSystem.csproj": {
+    "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\hospital-appointment-system\\HospitalAppointmentSystem\\HospitalAppointmentSystem\\HospitalAppointmentSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\HospitalAppointmentSystem\\HospitalAppointmentSystem\\HospitalAppointmentSystem.csproj",
+        "projectUniqueName": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\hospital-appointment-system\\HospitalAppointmentSystem\\HospitalAppointmentSystem\\HospitalAppointmentSystem.csproj",
         "projectName": "HospitalAppointmentSystem",
-        "projectPath": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\HospitalAppointmentSystem\\HospitalAppointmentSystem\\HospitalAppointmentSystem.csproj",
+        "projectPath": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\hospital-appointment-system\\HospitalAppointmentSystem\\HospitalAppointmentSystem\\HospitalAppointmentSystem.csproj",
         "packagesPath": "C:\\Users\\akifk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\HospitalAppointmentSystem\\HospitalAppointmentSystem\\obj\\",
+        "outputPath": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\hospital-appointment-system\\HospitalAppointmentSystem\\HospitalAppointmentSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

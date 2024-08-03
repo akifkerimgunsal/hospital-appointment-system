@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "67xEs0HUFNDfH3LMK1Y/p2Q0TXUEonEGnI9BMQq65qHrtuEy60ETTj2wlWbRizyW1LoTcxZgz6WmHk5HnBI0yw==",
+  "dgSpecHash": "xfs23q4HjxvrSbLD7PD/5nQjhyuQaDWUT+7tmaxvTwVn8nH2pejdmiA4f5MknGaOm2A34qnITVhcaRKa11OcrA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\HospitalAppointmentSystem\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\hospital-appointment-system\\HospitalAppointmentSystem\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

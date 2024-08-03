@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\HospitalAppointmentSystem\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\hospital-appointment-system\\HospitalAppointmentSystem\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\HospitalAppointmentSystem\\Entities\\Entities.csproj",
+      "projectPath": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\hospital-appointment-system\\HospitalAppointmentSystem\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\akifk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\HospitalAppointmentSystem\\Entities\\obj\\",
+      "outputPath": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\hospital-appointment-system\\HospitalAppointmentSystem\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

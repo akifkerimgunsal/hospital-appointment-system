@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EI88dcZ6lWMkHoc8nUZFWjo6WVmQ86uZ+p1khscekLe4qV1ut/goIuW8wmLsy1ysbS0sZXMAXUX3suB0k0Yq1w==",
+  "dgSpecHash": "jfoysdJZe8SA96iULlHeve0G7Ae/g8zN03tkTD2nZK+EAdHrM4hRmNvO05iXDIsBxgRNUo9h2cUfpop5lqUU+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\HospitalAppointmentSystem\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\hospital-appointment-system\\HospitalAppointmentSystem\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

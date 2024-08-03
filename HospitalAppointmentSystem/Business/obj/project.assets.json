@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\HospitalAppointmentSystem\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\hospital-appointment-system\\HospitalAppointmentSystem\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\HospitalAppointmentSystem\\Business\\Business.csproj",
+      "projectPath": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\hospital-appointment-system\\HospitalAppointmentSystem\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\akifk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\HospitalAppointmentSystem\\Business\\obj\\",
+      "outputPath": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\hospital-appointment-system\\HospitalAppointmentSystem\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7rH9VwfBh4Lmwp/uAOkmAUuz9CLgmbPBv66uf0omkReQhniaPI57mFsqAfIJVhYLysBRqpknzA7vE1fmC0Xp6w==",
+  "dgSpecHash": "0ewCLBSdkEBWz9ROJ34rdiVg32yUqU3zL9tIVO/rxI8xmfNIGZNljZ5F+Tm2EI1imHKigT43rBdfgVjYB7mhtw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\HospitalAppointmentSystem\\HospitalAppointmentSystem\\HospitalAppointmentSystem.csproj",
+  "projectFilePath": "C:\\Users\\akifk\\OneDrive\\Masaüstü\\GitHub\\hospital-appointment-system\\hospital-appointment-system\\HospitalAppointmentSystem\\HospitalAppointmentSystem\\HospitalAppointmentSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\akifk\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\akifk\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
