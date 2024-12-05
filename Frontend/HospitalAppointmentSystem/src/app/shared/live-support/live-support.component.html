@@ -1,0 +1,28 @@
+<div class="live-support-container">
+  <h2>Canlı Destek</h2>
+
+  <div *ngIf="isLiveChatAvailable; else unavailableTemplate">
+      <p>Canlı destek hizmetimiz şu anda aktif. Bir temsilci ile konuşmaya başlamak için aşağıdaki butona tıklayın.</p>
+      <button (click)="startLiveChat()" class="btn btn-primary">Canlı Destek Başlat</button>
+
+      <!-- Canlı Destek Mesajlaşma Alanı -->
+      <div *ngIf="messages.length > 0" class="chat-box mt-4">
+          <div *ngFor="let message of messages">
+              <strong>{{ message.sender }}:</strong> {{ message.text }}
+          </div>
+      </div>
+
+      <!-- Mesaj Gönderme Formu -->
+      <form [formGroup]="chatForm" (ngSubmit)="sendMessage()" class="mt-4">
+          <div class="form-group">
+              <label for="message">Mesajınızı yazın:</label>
+              <input id="message" formControlName="message" class="form-control" placeholder="Mesajınızı yazın">
+          </div>
+          <button type="submit" class="btn btn-success mt-2" [disabled]="chatForm.invalid">Gönder</button>
+      </form>
+  </div>
+
+  <ng-template #unavailableTemplate>
+      <p>Canlı destek hizmetimiz şu anda müsait değil. Lütfen daha sonra tekrar deneyin.</p>
+  </ng-template>
+</div>

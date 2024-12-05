@@ -1,0 +1,78 @@
+<div class="patient-appointment-management-container">
+  <h2>Hasta Randevu Yönetimi</h2>
+
+  <!-- Kimlik numarasına göre arama -->
+  <form [formGroup]="searchForm" (ngSubmit)="searchAppointments()">
+    <div class="form-group">
+      <label for="identityNumber">Hasta Kimlik Numarası:</label>
+      <input id="identityNumber" type="text" formControlName="identityNumber" class="form-control" placeholder="Kimlik Numarası Giriniz">
+    </div>
+    <button type="submit" class="btn btn-primary">Ara</button>
+  </form>
+
+  <!-- Randevu Listesi -->
+  <table class="table mt-4" *ngIf="patientAppointments.length > 0">
+    <thead>
+      <tr>
+        <th>Hasta Adı</th>
+        <th>Doktor Adı</th>
+        <th>Randevu Tarihi</th>
+        <th>Randevu Durumu</th>
+        <th>İşlem</th>
+        <th>Rapor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let appointment of patientAppointments">
+        <td>{{ appointment.patientName }}</td>
+        <td>{{ appointment.doctorName }}</td>
+        <td>{{ appointment.date | date }}</td>
+        <td>
+          {{ appointment.attended ? 'Evet' : appointment.date > today ? 'Henüz Gerçekleşmedi' : 'Hayır' }}
+        </td>
+        <td>
+          <button class="btn btn-warning" (click)="editAppointment(appointment)">Düzenle</button>
+          <button class="btn btn-danger" (click)="deleteAppointment(appointment.id)">Sil</button>
+        </td>
+        <td>
+          <button class="btn btn-info" 
+                  (click)="viewReport(appointment.id)" 
+                  [disabled]="!appointment.attended || !appointment.report || appointment.date > today">
+            Raporu Görüntüle
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Randevu düzenleme modalı -->
+  <div *ngIf="selectedAppointment" class="modal">
+    <div class="modal-content">
+      <h3>Randevu Bilgilerini Düzenle</h3>
+      <form [formGroup]="editForm" (ngSubmit)="saveAppointment()">
+        <div class="form-group">
+          <label for="patientName">Hasta Adı</label>
+          <input id="patientName" type="text" formControlName="patientName" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="doctorName">Doktor Adı</label>
+          <input id="doctorName" type="text" formControlName="doctorName" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="date">Randevu Tarihi</label>
+          <input id="date" type="date" formControlName="date" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="attended">Randevuya Gidildi</label>
+          <select id="attended" formControlName="attended" class="form-control">
+            <option value="true">Evet</option>
+            <option value="false">Hayır</option>
+            <option value="false">Henüz gerçekleşmedi</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Kaydet</button>
+        <button type="button" class="btn btn-secondary" (click)="selectedAppointment = null">İptal</button>
+      </form>
+    </div>
+  </div>
+</div>

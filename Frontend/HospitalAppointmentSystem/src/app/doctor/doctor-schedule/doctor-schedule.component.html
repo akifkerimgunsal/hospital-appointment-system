@@ -1,0 +1,21 @@
+<div class="doctor-schedule-container">
+  <h2>Çalışma Takvimim</h2>
+
+  <div class="calendar">
+      <div *ngFor="let day of schedule" class="calendar-day" (click)="selectDay(day)">
+          <span>{{ day.date | date: 'fullDate' }}</span>
+          <span>{{ day.timeSlots?.join(', ') || 'Çalışma saati yok' }}</span>
+      </div>
+  </div>
+
+  <div *ngIf="selectedDay" class="time-slot-selection">
+      <h3>{{ selectedDay.date | date: 'fullDate' }} için Saat Aralıkları</h3>
+
+      <div *ngFor="let timeSlot of timeSlots">
+          <input type="checkbox" [checked]="selectedTimeSlots.includes(timeSlot)" (change)="toggleTimeSlot(timeSlot)">
+          <label>{{ timeSlot }}</label>
+      </div>
+
+      <button class="btn btn-primary" (click)="saveSchedule()">Değişikliği Kaydet</button>
+  </div>
+</div>

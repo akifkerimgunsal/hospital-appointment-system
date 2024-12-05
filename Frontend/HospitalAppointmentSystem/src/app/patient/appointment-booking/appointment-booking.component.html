@@ -1,0 +1,45 @@
+<div class="appointment-booking-container">
+  <h2>Randevu Al</h2>
+
+  <form [formGroup]="bookingForm" (ngSubmit)="bookAppointment()">
+    <!-- Uzmanlık Alanı -->
+    <div class="form-group">
+      <label for="specialty">Uzmanlık Alanı</label>
+      <select id="specialty" formControlName="specialty" class="form-control" (change)="loadDoctors($event)">
+        <option *ngFor="let specialty of specialties" [value]="specialty">{{ specialty }}</option>
+      </select>
+    </div>
+
+    <!-- Doktor Seçimi -->
+    <div class="form-group" *ngIf="doctors.length > 0">
+      <label for="doctor">Doktor Seçin</label>
+      <select id="doctor" formControlName="doctorId" class="form-control" (change)="loadAvailableDates(bookingForm.get('doctorId')?.value)">
+        <option *ngFor="let doctor of doctors" [value]="doctor.id">{{ doctor.name }}</option>
+      </select>
+    </div>
+
+    <!-- Randevu Tarihi -->
+    <div class="form-group" *ngIf="availableDates.length > 0">
+      <label for="appointmentDate">Randevu Tarihi</label>
+      <select id="appointmentDate" formControlName="appointmentDate" class="form-control" (change)="loadAvailableTimes(bookingForm.get('appointmentDate')?.value)">
+        <option *ngFor="let date of availableDates" [value]="date">{{ date | date }}</option>
+      </select>
+    </div>
+
+    <!-- Randevu Saati -->
+    <div class="form-group" *ngIf="availableTimes.length > 0">
+      <label for="appointmentTime">Randevu Saati</label>
+      <select id="appointmentTime" formControlName="appointmentTime" class="form-control">
+        <option *ngFor="let time of availableTimes" [value]="time">{{ time }}</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="bookingForm.invalid">Randevu Al</button>
+  </form>
+
+  <!-- Uyarı mesajı -->
+  <div *ngIf="appointmentBooked" class="alert alert-success mt-3">
+    {{ email }} adresine randevu bilgileri gönderildi.<br>
+    {{ phoneNumber }} telefon numarasına randevu bilgileri gönderildi.
+  </div>
+</div>

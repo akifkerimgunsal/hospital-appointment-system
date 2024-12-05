@@ -1,0 +1,61 @@
+<div class="doctor-schedule-management-container">
+  <h2>Doktor Çalışma Takvimi Yönetimi</h2>
+
+  <!-- Doktor kimlik numarasına ve çalışma tarihine göre arama -->
+  <form [formGroup]="searchForm" (ngSubmit)="searchSchedule()">
+    <div class="form-group">
+      <label for="identityNumber">Doktor Kimlik Numarası:</label>
+      <input id="identityNumber" type="text" formControlName="identityNumber" class="form-control" placeholder="Doktor Kimlik Numarası">
+    </div>
+    <div class="form-group">
+      <label for="workDate">Çalışma Tarihi:</label>
+      <input id="workDate" type="date" formControlName="workDate" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Ara</button>
+  </form>
+
+  <!-- Doktorun o tarihteki çalışma bilgileri -->
+  <table class="table mt-4" *ngIf="doctorSchedules.length > 0">
+    <thead>
+      <tr>
+        <th>Doktor Adı</th>
+        <th>Çalışma Tarihi</th>
+        <th>İşlem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let schedule of doctorSchedules">
+        <td>{{ schedule.doctorName }}</td>
+        <td>{{ schedule.workDate | date }}</td>
+        <td>
+          <button class="btn btn-warning" (click)="editSchedule(schedule)">Düzenle</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Çalışma takvimi düzenleme modalı -->
+  <div *ngIf="selectedSchedule" class="modal">
+    <div class="modal-content">
+      <h3>Çalışma Bilgilerini Düzenle</h3>
+      <form [formGroup]="editForm" (ngSubmit)="saveSchedule()">
+        <div class="form-group">
+          <label for="doctorName">Doktor Adı</label>
+          <input id="doctorName" type="text" formControlName="doctorName" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="workDate">Çalışma Tarihi</label>
+          <input id="workDate" type="date" formControlName="workDate" class="form-control" />
+        </div>
+        <!-- Eğer burada boolean bir değer varsa ve string atanıyorsa bunu düzeltin -->
+        <!-- Örneğin, yanlış kullanım -->
+        <input type="checkbox" [checked]="'true'" /> <!-- Yanlış -->
+        <!-- Doğru kullanım -->
+        <input type="checkbox" [checked]="true" /> <!-- Doğru -->
+        
+        <button type="submit" class="btn btn-primary">Kaydet</button>
+        <button type="button" class="btn btn-secondary" (click)="selectedSchedule = null">İptal</button>
+      </form>
+    </div>
+  </div>
+</div>

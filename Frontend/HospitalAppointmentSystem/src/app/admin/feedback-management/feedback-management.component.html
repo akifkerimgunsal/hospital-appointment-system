@@ -1,0 +1,41 @@
+<div class="feedback-management-container">
+  <h2>Geri Bildirim Yönetimi</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Kullanıcı Adı</th>
+        <th>Kullanıcı Rolü</th> <!-- Kullanıcı rolü eklendi -->
+        <th>Geri Bildirim</th>
+        <th>Durum</th>
+        <th>İşlem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let feedback of feedbacks">
+        <td>{{ feedback.userName }}</td>
+        <td>{{ feedback.userRole }}</td> <!-- Kullanıcı rolü gösterimi -->
+        <td>{{ feedback.message }}</td>
+        <td>{{ feedback.status }}</td>
+        <td>
+          <button class="btn btn-primary" *ngIf="feedback.status !== 'Tamamlandı'" (click)="replyToFeedback(feedback)">Cevapla</button>
+          <button class="btn btn-danger" (click)="deleteFeedback(feedback.id)">Sil</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Geri bildirim cevaplama modalı -->
+  <div *ngIf="selectedFeedback" class="modal">
+    <div class="modal-content">
+      <h3>Geri Bildirimi Cevapla</h3>
+      <form [formGroup]="replyForm" (ngSubmit)="submitReply()">
+        <div class="form-group">
+          <label for="replyMessage">Cevabınız</label>
+          <textarea id="replyMessage" formControlName="replyMessage" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Gönder</button>
+        <button type="button" class="btn btn-secondary" (click)="selectedFeedback = null">İptal</button>
+      </form>
+    </div>
+  </div>
+</div>

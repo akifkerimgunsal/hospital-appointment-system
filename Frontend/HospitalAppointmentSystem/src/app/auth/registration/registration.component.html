@@ -1,0 +1,145 @@
+<div class="registration-container">
+  <h2>Yeni Üyelik</h2>
+  <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="firstName">Ad</label>
+      <input
+        id="firstName"
+        type="text"
+        formControlName="firstName"
+        class="form-control"
+        placeholder="Ad"
+      />
+      <div class="invalid-feedback" *ngIf="registrationForm.get('firstName')?.invalid && registrationForm.get('firstName')?.touched">
+        Lütfen adınızı giriniz.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Soyad</label>
+      <input
+        id="lastName"
+        type="text"
+        formControlName="lastName"
+        class="form-control"
+        placeholder="Soyad"
+      />
+      <div class="invalid-feedback" *ngIf="registrationForm.get('lastName')?.invalid && registrationForm.get('lastName')?.touched">
+        Lütfen soyadınızı giriniz.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="identityNumber">Kimlik Numarası</label>
+      <input
+        id="identityNumber"
+        type="text"
+        formControlName="identityNumber"
+        class="form-control"
+        placeholder="Kimlik Numarası"
+      />
+      <div class="invalid-feedback" *ngIf="registrationForm.get('identityNumber')?.invalid && registrationForm.get('identityNumber')?.touched">
+        Lütfen geçerli bir kimlik numarası giriniz.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="birthDate">Doğum Tarihi</label>
+      <input
+        id="birthDate"
+        type="date"
+        formControlName="birthDate"
+        class="form-control"
+        placeholder="Doğum Tarihi"
+      />
+      <div class="invalid-feedback" *ngIf="registrationForm.get('birthDate')?.invalid && registrationForm.get('birthDate')?.touched">
+        Lütfen doğum tarihinizi giriniz.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">E-posta</label>
+      <input
+        id="email"
+        type="email"
+        formControlName="email"
+        class="form-control"
+        placeholder="E-posta"
+      />
+      <div class="invalid-feedback" *ngIf="registrationForm.get('email')?.invalid && registrationForm.get('email')?.touched">
+        Lütfen geçerli bir e-posta adresi giriniz.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Telefon Numarası</label>
+      <input
+        id="phone"
+        type="text"
+        formControlName="phone"
+        class="form-control"
+        placeholder="Telefon Numarası"
+      />
+      <div class="invalid-feedback" *ngIf="registrationForm.get('phone')?.invalid && registrationForm.get('phone')?.touched">
+        Lütfen geçerli bir telefon numarası giriniz.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Şifre</label>
+      <input
+        id="password"
+        type="password"
+        formControlName="password"
+        class="form-control"
+        placeholder="Şifre"
+      />
+      <div class="invalid-feedback" *ngIf="registrationForm.get('password')?.invalid && registrationForm.get('password')?.touched">
+        Şifre en az 6 karakter olmalıdır.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="confirmPassword">Şifre Tekrar</label>
+      <input
+        id="confirmPassword"
+        type="password"
+        formControlName="confirmPassword"
+        class="form-control"
+        placeholder="Şifre Tekrar"
+      />
+      <div class="invalid-feedback" *ngIf="registrationForm.get('confirmPassword')?.invalid && registrationForm.get('confirmPassword')?.touched">
+        Şifreler uyuşmuyor.
+      </div>
+    </div>
+
+    <div class="form-check">
+      <input
+        id="isDoctor"
+        type="checkbox"
+        formControlName="isDoctor"
+        class="form-check-input"
+      />
+      <label for="isDoctor" class="form-check-label">Doktor Üyeliği</label>
+    </div>
+
+    <div class="form-group" *ngIf="isDoctor">
+      <label for="specialty">Uzmanlık Alanı</label>
+      <input
+        id="specialty"
+        type="text"
+        formControlName="specialty"
+        class="form-control"
+        placeholder="Uzmanlık Alanı"
+      />
+      <div class="invalid-feedback" *ngIf="registrationForm.get('specialty')?.invalid && registrationForm.get('specialty')?.touched">
+        Lütfen uzmanlık alanınızı giriniz.
+      </div>
+    </div>
+
+    <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="registrationForm.invalid">Üyelik Oluştur</button>
+  </form>
+  <p>Zaten üye misiniz? <a routerLink="/login">Giriş Yap</a></p>
+</div>

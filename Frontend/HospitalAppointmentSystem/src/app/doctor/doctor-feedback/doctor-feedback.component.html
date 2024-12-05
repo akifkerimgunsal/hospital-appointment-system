@@ -1,0 +1,13 @@
+<div class="doctor-feedback-container">
+    <h2>Geri Bildirimde Bulun</h2>
+  
+    <form [formGroup]="feedbackForm" (ngSubmit)="submitFeedback()">
+      <div class="form-group">
+        <label for="message">Geri Bildiriminiz</label>
+        <textarea id="message" formControlName="message" class="form-control" rows="5" placeholder="Geri bildiriminizi yazın"></textarea>
+      </div>
+  
+      <button type="submit" class="btn btn-primary" [disabled]="feedbackForm.invalid">Gönder</button>
+    </form>
+  </div>
+  

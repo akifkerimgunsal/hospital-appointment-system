@@ -1,0 +1,72 @@
+<div class="doctor-dashboard-container">
+  <h2>Doktor Paneli</h2>
+
+  <div class="dashboard-sections">
+    <!-- Profil Bilgilerim -->
+    <div class="section">
+      <h3>Profil Bilgilerim</h3>
+      <a routerLink="/profile" class="btn btn-primary">Profilimi Görüntüle</a>
+    </div>
+
+    <!-- En Yakın Randevu -->
+    <div *ngIf="nearestAppointment" class="section">
+      <h3>En Yakın Randevu</h3>
+      <div>
+        <strong>Hasta:</strong> {{ nearestAppointment.patientName }} <br>
+        <strong>Tarih:</strong> {{ nearestAppointment.date | date:'short' }} <br>
+  
+        <!-- "Geldi" ve "Gelmedi" işaretleme -->
+        <button (click)="markAttendance('arrived')" [class.active]="attendanceStatus === 'arrived'" class="btn btn-success">Randevuya Geldi</button>
+        <button (click)="markAttendance('not_arrived')" [class.active]="attendanceStatus === 'not_arrived'" class="btn btn-danger">Randevuya Gelmedi</button>
+  
+        <!-- Rapor ekleme -->
+        <div *ngIf="attendanceStatus === 'arrived'">
+          <h4>Rapor Ekle</h4>
+          <textarea [(ngModel)]="reportText" placeholder="Rapor giriniz" class="form-control"></textarea><br>
+        </div>
+  
+        <!-- Randevuyu Kaydet Butonu -->
+        <button (click)="submitReportAndSave()" class="btn btn-primary">Kaydet</button>
+      </div>
+    </div>
+  
+    <!-- Yaklaşan Randevularım -->
+    <div class="section">
+      <h3>Yaklaşan Randevularım</h3>
+      <ul>
+        <li *ngFor="let appointment of upcomingAppointments">
+          <strong>{{ appointment.date | date:'short' }}</strong>: {{ appointment.patientName }}
+        </li>
+      </ul>
+    </div>
+
+    <!-- Çalışma Takvimim -->
+    <div class="section">
+      <h3>Çalışma Takvimim</h3>
+      <a routerLink="/doctor-schedule" class="btn btn-primary">Randevularım</a>
+    </div>
+
+    <!-- Hasta Bilgileri -->
+    <div class="section">
+      <h3>Hasta Bilgileri</h3>
+      <a routerLink="/medical-report" class="btn btn-primary">Hasta Raporları</a>
+    </div>
+
+    <!-- Geri Bildirim -->
+    <div class="section">
+      <h3>Geri Bildirim</h3>
+      <a routerLink="/doctor-feedback" class="btn btn-primary">Geri Bildirimde Bulun</a>
+    </div>
+
+    <!-- Yardım ve Destek -->
+    <div class="section">
+      <h3>Yardım(SSS)</h3>
+      <a routerLink="/doctor-faq" class="btn btn-primary">Yardım</a>
+    </div>
+
+    <div class="section">
+      <h3>Canlı Destek</h3>
+      <a routerLink="/live-support" class="btn btn-primary">Canlı Destek</a>
+    </div>
+  </div>
+</div>

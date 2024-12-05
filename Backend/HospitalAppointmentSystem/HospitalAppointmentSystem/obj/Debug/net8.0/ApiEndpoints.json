@@ -1,0 +1,536 @@
+[
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.AdminController",
+    "Method": "GetDoctorSchedule",
+    "RelativePath": "api/Admin/doctors/{doctorId}/schedule",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.AdminController",
+    "Method": "SendDoctorNotification",
+    "RelativePath": "api/Admin/doctors/{doctorId}/send-notification",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "message",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.AdminController",
+    "Method": "GetAllFeedbacks",
+    "RelativePath": "api/Admin/feedbacks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.AdminController",
+    "Method": "ReplyToFeedback",
+    "RelativePath": "api/Admin/feedbacks/{feedbackId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "feedbackId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "responseContent",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.AdminController",
+    "Method": "GetPatientAppointmentsByIdentity",
+    "RelativePath": "api/Admin/patients/{identityNumber}/appointments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "identityNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.AdminController",
+    "Method": "SendPatientNotification",
+    "RelativePath": "api/Admin/patients/{patientId}/send-notification",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "message",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.AdminController",
+    "Method": "GetSystemReports",
+    "RelativePath": "api/Admin/reports",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.AdminController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/Admin/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.AdminController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/Admin/users",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDto",
+        "Type": "DTO.UserDTOs.UserProfileDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.AdminController",
+    "Method": "GetUserByIdentity",
+    "RelativePath": "api/Admin/users/{identityNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "identityNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.AdminController",
+    "Method": "SendUserNotification",
+    "RelativePath": "api/Admin/users/{userId}/send-notification",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "message",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.AdminController",
+    "Method": "DeleteUserByIdentityNumber",
+    "RelativePath": "api/Admin/users/delete/{identityNumber}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "identityNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginUserDto",
+        "Type": "DTO.UserDTOs.LoginUserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerUserDto",
+        "Type": "DTO.UserDTOs.RegisterUserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.DoctorController",
+    "Method": "GetPastAppointments",
+    "RelativePath": "api/Doctor/{doctorId}/appointments/past",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.DoctorController",
+    "Method": "GetUpcomingAppointments",
+    "RelativePath": "api/Doctor/{doctorId}/appointments/upcoming",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.DoctorController",
+    "Method": "GetMedicalReports",
+    "RelativePath": "api/Doctor/{doctorId}/medical-reports",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.DoctorController",
+    "Method": "GetDoctorSchedule",
+    "RelativePath": "api/Doctor/{doctorId}/schedule",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.DoctorController",
+    "Method": "CreateMedicalReport",
+    "RelativePath": "api/Doctor/appointments/{appointmentId}/medical-report",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appointmentId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "reportDto",
+        "Type": "DTO.MedicalReportDTOs.CreateMedicalReportDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.DoctorController",
+    "Method": "AddDoctorSchedules",
+    "RelativePath": "api/Doctor/schedules",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "scheduleDto",
+        "Type": "DTO.DoctorDTOs.AddDoctorScheduleDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.FeedbackController",
+    "Method": "SendFeedback",
+    "RelativePath": "api/Feedback",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "feedbackDto",
+        "Type": "DTO.FeedbackDTOs.CreateFeedbackDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.LiveSupportController",
+    "Method": "SendMessage",
+    "RelativePath": "api/LiveSupport/live-support",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "messageDto",
+        "Type": "DTO.LiveSupportDTOs.LiveSupportMessageDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.MedicalReportController",
+    "Method": "CreateMedicalReport",
+    "RelativePath": "api/MedicalReport/{appointmentId}/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appointmentId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "reportDto",
+        "Type": "DTO.MedicalReportDTOs.CreateMedicalReportDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.MedicalReportController",
+    "Method": "GetMedicalReports",
+    "RelativePath": "api/MedicalReport/{appointmentId}/reports",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appointmentId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.PatientController",
+    "Method": "GetPastAppointments",
+    "RelativePath": "api/Patient/{patientId}/appointments/past",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.PatientController",
+    "Method": "GetUpcomingAppointments",
+    "RelativePath": "api/Patient/{patientId}/appointments/upcoming",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.PatientController",
+    "Method": "BookAppointment",
+    "RelativePath": "api/Patient/appointments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appointmentDto",
+        "Type": "DTO.AppointmentDTOs.CreateAppointmentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.PatientController",
+    "Method": "GetDoctorAvailableDates",
+    "RelativePath": "api/Patient/doctors/{doctorId}/available-dates",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.PatientController",
+    "Method": "SendFeedback",
+    "RelativePath": "api/Patient/feedbacks",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "feedbackDto",
+        "Type": "DTO.FeedbackDTOs.CreateFeedbackDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.ProfileController",
+    "Method": "GetUserProfile",
+    "RelativePath": "api/Profile/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.ProfileController",
+    "Method": "UpdateUserProfile",
+    "RelativePath": "api/Profile/{userId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "userProfileDto",
+        "Type": "DTO.UserDTOs.UpdateUserProfileDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HospitalAppointmentSystem.Controllers.ProfileController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/Profile/{userId}/change-password",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "changePasswordDto",
+        "Type": "DTO.UserDTOs.UpdateUserProfileDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,40 @@
+<div class="login-container">
+    <h2>Randevu Sistemine Giriş</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="emailOrPhone">E-posta veya Telefon Numarası</label>
+        <input
+          id="emailOrPhone"
+          type="text"
+          formControlName="emailOrPhone"
+          class="form-control"
+          [class.is-invalid]="loginForm.get('emailOrPhone')?.invalid && loginForm.get('emailOrPhone')?.touched"
+          placeholder="E-posta veya Telefon Numarası"
+        />
+        <div class="invalid-feedback" *ngIf="loginForm.get('emailOrPhone')?.invalid && loginForm.get('emailOrPhone')?.touched">
+          Geçerli bir e-posta veya telefon numarası giriniz.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Şifre</label>
+        <input
+          id="password"
+          type="password"
+          formControlName="password"
+          class="form-control"
+          [class.is-invalid]="loginForm.get('password')?.invalid && loginForm.get('password')?.touched"
+          placeholder="Şifreniz"
+        />
+        <div class="invalid-feedback" *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+          Şifre en az 6 karakter olmalıdır.
+        </div>
+      </div>
+  
+      <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+  
+      <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Giriş Yap</button>
+    </form>
+    <p>Henüz üye değil misiniz? <a routerLink="/registration">Yeni Üyelik</a></p>
+  </div>
+  

@@ -1,0 +1,20 @@
+<div class="system-report-container">
+  <h2>Sistem Raporları</h2>
+  <div class="report-card">
+    <h3>Kullanıcı Sayısı</h3>
+    <p>{{ totalUsers }} kullanıcı kayıtlı.</p>
+  </div>
+  <div class="report-card">
+    <h3>Toplam Randevu Sayısı</h3>
+    <p>{{ totalAppointments }} randevu oluşturuldu.</p>
+  </div>
+  <div class="report-card">
+    <h3>Toplam Doktor Sayısı</h3>
+    <p>{{ totalDoctors }} doktor sistemde kayıtlı.</p>
+  </div>
+  <div class="report-card">
+    <h3>Toplam Hasta Sayısı</h3>
+    <p>{{ totalPatients }} hasta sistemde kayıtlı.</p>
+  </div>
+  <button class="btn btn-primary" (click)="downloadReports()">Raporları İndir</button>
+</div>

@@ -1,0 +1,44 @@
+<div class="patient-dashboard-container">
+    <h2>Hasta Paneli</h2>
+  
+    <div class="dashboard-sections">
+      <div class="section">
+        <h3>Profil Bilgilerim</h3>
+        <a routerLink="/profile" class="btn btn-primary">Profilimi Görüntüle</a>
+      </div>
+  
+      <div class="section">
+        <h3>Yaklaşan Randevularım</h3>
+        <ul>
+          <li *ngFor="let appointment of upcomingAppointments">
+            <strong>{{ appointment.date | date:'short' }}</strong>: {{ appointment.doctorName }}
+          </li>
+        </ul>
+      </div>
+  
+      <div class="section">
+        <h3>Randevu Al</h3>
+        <a routerLink="/appointment-booking" class="btn btn-primary">Yeni Randevu Al</a>
+      </div>
+  
+      <div class="section">
+        <h3>Geçmiş Randevularım</h3>
+        <a routerLink="/past-appointment" class="btn btn-secondary">Geçmiş Randevular</a>
+      </div>
+  
+      <div class="section">
+        <h3>Geri Bildirim Yap</h3>
+        <a routerLink="/patient-feedback" class="btn btn-primary">Geri Bildirimde Bulun</a>
+      </div>
+  
+      <div class="section">
+        <h3>Yardım ve Destek</h3>
+        <a routerLink="/patient-faq" class="btn btn-primary">Yardım ve SSS</a>
+      </div>
+      <div class="section">
+        <h3>Canlı Destek</h3>
+        <a routerLink="/live-support" class="btn btn-primary">Canlı destek</a>
+      </div>
+    </div>
+  </div>
+  

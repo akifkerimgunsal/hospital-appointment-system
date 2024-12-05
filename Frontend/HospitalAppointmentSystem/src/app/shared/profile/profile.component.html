@@ -1,0 +1,37 @@
+<div class="profile-container">
+    <h2>Profil Bilgileri</h2>
+    <form [formGroup]="profileForm" (ngSubmit)="saveProfile()">
+      <div class="form-group">
+        <label for="firstName">Ad</label>
+        <input id="firstName" type="text" formControlName="firstName" class="form-control" />
+      </div>
+  
+      <div class="form-group">
+        <label for="lastName">Soyad</label>
+        <input id="lastName" type="text" formControlName="lastName" class="form-control" />
+      </div>
+  
+      <div class="form-group">
+        <label for="email">E-posta</label>
+        <input id="email" type="email" formControlName="email" class="form-control" />
+      </div>
+  
+      <div class="form-group">
+        <label for="phone">Telefon Numarası</label>
+        <input id="phone" type="text" formControlName="phone" class="form-control" />
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Şifre (opsiyonel)</label>
+        <input id="password" type="password" formControlName="password" class="form-control" />
+      </div>
+  
+      <div class="form-group">
+        <label for="confirmPassword">Şifre Tekrar</label>
+        <input id="confirmPassword" type="password" formControlName="confirmPassword" class="form-control" />
+      </div>
+  
+      <button type="submit" class="btn btn-primary" [disabled]="profileForm.invalid">Kaydet</button>
+    </form>
+  </div>
+  

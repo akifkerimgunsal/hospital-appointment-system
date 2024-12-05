@@ -1,0 +1,18 @@
+<div class="past-appointment-container">
+    <h2>Geçmiş Randevularım</h2>
+  
+    <div *ngIf="pastAppointments.length > 0">
+      <ul>
+        <li *ngFor="let appointment of pastAppointments">
+          <strong>Tarih:</strong> {{ appointment.date | date:'short' }} <br>
+          <strong>Doktor:</strong> {{ appointment.doctorName }} <br>
+          <strong>Rapor:</strong> {{ appointment.report ? appointment.report.details : 'Rapor Yok' }}
+        </li>
+      </ul>
+    </div>
+  
+    <div *ngIf="pastAppointments.length === 0">
+      <p>Geçmiş randevunuz bulunmamaktadır.</p>
+    </div>
+  </div>
+  

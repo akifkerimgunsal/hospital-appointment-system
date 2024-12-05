@@ -1,0 +1,38 @@
+<div class="medical-report-container">
+  <h2>Hasta Bilgileri ve Raporlar</h2>
+
+  <!-- Kimlik Numarası Girişi -->
+  <div class="form-group">
+    <label for="patientId">Hasta Kimlik Numarası</label>
+    <input id="patientId" [(ngModel)]="patientId" class="form-control" type="text" placeholder="Kimlik Numarası Girin">
+  </div>
+
+  <button class="btn btn-primary" (click)="loadPatientReports()">Raporları Görüntüle</button>
+
+  <!-- Hasta Bilgileri -->
+  <div *ngIf="patientInfo">
+    <h3>Hasta Bilgileri</h3>
+    <p><strong>Ad Soyad:</strong> {{ patientInfo.firstName }} {{ patientInfo.lastName }}</p>
+    <p><strong>Doğum Tarihi:</strong> {{ patientInfo.birthDate | date }}</p>
+    <p><strong>Telefon Numarası:</strong> {{ patientInfo.phone }}</p>
+  </div>
+
+  <!-- Randevu Listesi -->
+  <div *ngIf="patientReports.length > 0" class="report-list">
+    <h3>Geçmiş Randevular</h3>
+    <ul>
+      <li *ngFor="let report of patientReports">
+        <strong>Tarih:</strong> {{ report.date | date:'short' }} <br>
+        <strong>Doktor Uzmanlık Alanı:</strong> {{ report.specialty }} <br>
+        <button class="btn btn-info" (click)="viewReport(report.report)" [disabled]="!report.report">
+          Raporu Görüntüle
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Eğer rapor yoksa mesaj -->
+  <div *ngIf="patientReports.length === 0 && patientId">
+    <p>Bu hasta için rapor bulunamadı.</p>
+  </div>
+</div>
