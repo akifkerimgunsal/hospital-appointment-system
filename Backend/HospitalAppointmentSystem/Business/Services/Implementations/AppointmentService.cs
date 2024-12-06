@@ -34,7 +34,7 @@ namespace Business.Services.Implementations
             return ServiceResponseHelper<AppointmentDetailsDTO>.SuccessResponse(appointmentDetailsDto, "Appointment created successfully.");
         }
 
-        // Randevu Güncelleme
+         Randevu Güncelleme
         public async Task<ServiceResponseHelper<AppointmentDetailsDTO>> UpdateAppointment(UpdateAppointmentDTO appointmentDto)
         {
             var appointment = await _unitOfWork.Appointments.GetByIdAsync(appointmentDto.AppointmentId);

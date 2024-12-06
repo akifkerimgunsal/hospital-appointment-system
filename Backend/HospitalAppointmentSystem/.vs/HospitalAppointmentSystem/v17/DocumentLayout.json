@@ -1,12 +1,156 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\AKG\\Desktop\\Proje Bitiri\u015F\\Backend\\3\\HospitalAppointmentSystem\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\AKG\\Desktop\\GitHub\\hospital-appointment-system\\Backend\\HospitalAppointmentSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F88C5604-5457-478D-97E7-0978DCDD0FC7}|Business\\Business.csproj|c:\\users\\akg\\desktop\\github\\hospital-appointment-system\\backend\\hospitalappointmentsystem\\business\\services\\implementations\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F88C5604-5457-478D-97E7-0978DCDD0FC7}|Business\\Business.csproj|solutionrelative:business\\services\\implementations\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F88C5604-5457-478D-97E7-0978DCDD0FC7}|Business\\Business.csproj|c:\\users\\akg\\desktop\\github\\hospital-appointment-system\\backend\\hospitalappointmentsystem\\business\\services\\implementations\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F88C5604-5457-478D-97E7-0978DCDD0FC7}|Business\\Business.csproj|solutionrelative:business\\services\\implementations\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F88C5604-5457-478D-97E7-0978DCDD0FC7}|Business\\Business.csproj|c:\\users\\akg\\desktop\\github\\hospital-appointment-system\\backend\\hospitalappointmentsystem\\business\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F88C5604-5457-478D-97E7-0978DCDD0FC7}|Business\\Business.csproj|solutionrelative:business\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F88C5604-5457-478D-97E7-0978DCDD0FC7}|Business\\Business.csproj|c:\\users\\akg\\desktop\\github\\hospital-appointment-system\\backend\\hospitalappointmentsystem\\business\\helpers\\serviceresponsehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F88C5604-5457-478D-97E7-0978DCDD0FC7}|Business\\Business.csproj|solutionrelative:business\\helpers\\serviceresponsehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F88C5604-5457-478D-97E7-0978DCDD0FC7}|Business\\Business.csproj|c:\\users\\akg\\desktop\\github\\hospital-appointment-system\\backend\\hospitalappointmentsystem\\business\\helpers\\notificationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F88C5604-5457-478D-97E7-0978DCDD0FC7}|Business\\Business.csproj|solutionrelative:business\\helpers\\notificationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F88C5604-5457-478D-97E7-0978DCDD0FC7}|Business\\Business.csproj|c:\\users\\akg\\desktop\\github\\hospital-appointment-system\\backend\\hospitalappointmentsystem\\business\\helpers\\hashinghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F88C5604-5457-478D-97E7-0978DCDD0FC7}|Business\\Business.csproj|solutionrelative:business\\helpers\\hashinghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F88C5604-5457-478D-97E7-0978DCDD0FC7}|Business\\Business.csproj|c:\\users\\akg\\desktop\\github\\hospital-appointment-system\\backend\\hospitalappointmentsystem\\business\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F88C5604-5457-478D-97E7-0978DCDD0FC7}|Business\\Business.csproj|solutionrelative:business\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F88C5604-5457-478D-97E7-0978DCDD0FC7}|Business\\Business.csproj|c:\\users\\akg\\desktop\\github\\hospital-appointment-system\\backend\\hospitalappointmentsystem\\business\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F88C5604-5457-478D-97E7-0978DCDD0FC7}|Business\\Business.csproj|solutionrelative:business\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppointmentService.cs",
+              "DocumentMoniker": "C:\\Users\\AKG\\Desktop\\GitHub\\hospital-appointment-system\\Backend\\HospitalAppointmentSystem\\Business\\Services\\Implementations\\AppointmentService.cs",
+              "RelativeDocumentMoniker": "Business\\Services\\Implementations\\AppointmentService.cs",
+              "ToolTip": "C:\\Users\\AKG\\Desktop\\GitHub\\hospital-appointment-system\\Backend\\HospitalAppointmentSystem\\Business\\Services\\Implementations\\AppointmentService.cs",
+              "RelativeToolTip": "Business\\Services\\Implementations\\AppointmentService.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAUwEAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T11:25:36.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "C:\\Users\\AKG\\Desktop\\GitHub\\hospital-appointment-system\\Backend\\HospitalAppointmentSystem\\Business\\Services\\Implementations\\AdminService.cs",
+              "RelativeDocumentMoniker": "Business\\Services\\Implementations\\AdminService.cs",
+              "ToolTip": "C:\\Users\\AKG\\Desktop\\GitHub\\hospital-appointment-system\\Backend\\HospitalAppointmentSystem\\Business\\Services\\Implementations\\AdminService.cs",
+              "RelativeToolTip": "Business\\Services\\Implementations\\AdminService.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAUwMUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T11:25:27.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\AKG\\Desktop\\GitHub\\hospital-appointment-system\\Backend\\HospitalAppointmentSystem\\Business\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Business\\Mapping\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\AKG\\Desktop\\GitHub\\hospital-appointment-system\\Backend\\HospitalAppointmentSystem\\Business\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "Business\\Mapping\\MappingProfile.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAQwCwAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T11:25:11.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServiceResponseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\AKG\\Desktop\\GitHub\\hospital-appointment-system\\Backend\\HospitalAppointmentSystem\\Business\\Helpers\\ServiceResponseHelper.cs",
+              "RelativeDocumentMoniker": "Business\\Helpers\\ServiceResponseHelper.cs",
+              "ToolTip": "C:\\Users\\AKG\\Desktop\\GitHub\\hospital-appointment-system\\Backend\\HospitalAppointmentSystem\\Business\\Helpers\\ServiceResponseHelper.cs",
+              "RelativeToolTip": "Business\\Helpers\\ServiceResponseHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T11:24:38.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NotificationHelper.cs",
+              "DocumentMoniker": "C:\\Users\\AKG\\Desktop\\GitHub\\hospital-appointment-system\\Backend\\HospitalAppointmentSystem\\Business\\Helpers\\NotificationHelper.cs",
+              "RelativeDocumentMoniker": "Business\\Helpers\\NotificationHelper.cs",
+              "ToolTip": "C:\\Users\\AKG\\Desktop\\GitHub\\hospital-appointment-system\\Backend\\HospitalAppointmentSystem\\Business\\Helpers\\NotificationHelper.cs",
+              "RelativeToolTip": "Business\\Helpers\\NotificationHelper.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T11:24:35.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HashingHelper.cs",
+              "DocumentMoniker": "C:\\Users\\AKG\\Desktop\\GitHub\\hospital-appointment-system\\Backend\\HospitalAppointmentSystem\\Business\\Helpers\\HashingHelper.cs",
+              "RelativeDocumentMoniker": "Business\\Helpers\\HashingHelper.cs",
+              "ToolTip": "C:\\Users\\AKG\\Desktop\\GitHub\\hospital-appointment-system\\Backend\\HospitalAppointmentSystem\\Business\\Helpers\\HashingHelper.cs",
+              "RelativeToolTip": "Business\\Helpers\\HashingHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T11:24:19.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ValidationException.cs",
+              "DocumentMoniker": "C:\\Users\\AKG\\Desktop\\GitHub\\hospital-appointment-system\\Backend\\HospitalAppointmentSystem\\Business\\Exceptions\\ValidationException.cs",
+              "RelativeDocumentMoniker": "Business\\Exceptions\\ValidationException.cs",
+              "ToolTip": "C:\\Users\\AKG\\Desktop\\GitHub\\hospital-appointment-system\\Backend\\HospitalAppointmentSystem\\Business\\Exceptions\\ValidationException.cs",
+              "RelativeToolTip": "Business\\Exceptions\\ValidationException.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T11:24:15.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\AKG\\Desktop\\GitHub\\hospital-appointment-system\\Backend\\HospitalAppointmentSystem\\Business\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "Business\\Exceptions\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\AKG\\Desktop\\GitHub\\hospital-appointment-system\\Backend\\HospitalAppointmentSystem\\Business\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "Business\\Exceptions\\NotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T11:24:10.528Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

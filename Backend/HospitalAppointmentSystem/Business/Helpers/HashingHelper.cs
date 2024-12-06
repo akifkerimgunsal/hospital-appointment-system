@@ -5,7 +5,6 @@ namespace Business.Helpers
 {
     public class HashingHelper
     {
-        // Şifreyi hash'leme metodu
         public static string HashPassword(string password)
         {
             using (var sha256 = SHA256.Create())

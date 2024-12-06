@@ -33,7 +33,7 @@ namespace Business.Mapping
 
             // Feedback Mapping
             CreateMap<Feedback, FeedbackDetailsDTO>()
-                .ForMember(dest => dest.FeedbackId, opt => opt.MapFrom(src => src.Id))  // feedbackId mapping
+                .ForMember(dest => dest.FeedbackId, opt => opt.MapFrom(src => src.Id))  
                 .ForMember(dest => dest.User, opt => opt.MapFrom(src => src.User))
                 .ReverseMap();
 
@@ -42,7 +42,7 @@ namespace Business.Mapping
 
             // Live Support Mapping
             CreateMap<LiveSupport, LiveSupportDTO>()
-            .ForMember(dest => dest.UserName, opt => opt.Ignore()); // Kullanıcı adı sonradan ekleniyor
+            .ForMember(dest => dest.UserName, opt => opt.Ignore()); 
             CreateMap<LiveSupportMessageDTO, string>()
                 .ConvertUsing(msg => $"{msg.MessageContent}");
             CreateMap<string, LiveSupportMessageDTO>()
